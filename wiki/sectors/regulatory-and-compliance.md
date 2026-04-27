@@ -1,7 +1,7 @@
 ---
 type: sector
 name: Regulatory and compliance
-sources: 3
+sources: 4
 last_updated: 2026-04-27
 ---
 
@@ -17,7 +17,21 @@ This sector is named on the public 51 deck as a distinct research category (Slid
 
 ## Vendors in this sector
 
-_(populated as public vendor sources are ingested. Target in this Session 1: [[chainalysis]] (source 8).)_
+- [[chainalysis]] — institutional-grade blockchain compliance and investigation platform; the wiki's first compliance-sector vendor. Multi-product surface: KYT (transaction monitoring), Reactor (investigation), Risk Assessment (Address Screening / VASP Risking / Sentinel), emerging security (Hexagate, Alterya). Customer base: 1,500+ entities including 9 of top 10 crypto exchanges and 45+ regulators worldwide. Sourced from [[vendor-chainalysis-homepage-2026-04]].
+
+## Compliance-vendor product categories
+
+The compliance-vendor side of this sector decomposes into three operational product categories that map onto regulator-side requirements:
+
+| Product category | Regulator-side anchor | Vendor in wiki |
+|---|---|---|
+| **[[kyt-know-your-transaction|KYT (Know Your Transaction)]]** — real-time transaction monitoring | NYDFS 23 NYCRR Part 504; FATF Travel Rule; MiCA Title V CASP supervisory obligations | [[chainalysis]] (KYT product) |
+| **Investigation / fund-tracing** — multi-chain forensics | Law enforcement / regulator enforcement actions | [[chainalysis]] (Reactor product) |
+| **Risk assessment** — wallet / VASP / token risk profiling | OFAC sanctions screening; FATF VASP definitions | [[chainalysis]] (Address Screening / VASP Risking / Sentinel) |
+
+The structural primitive underlying all three is [[on-chain-analytics]] — clustering heuristics + ML applied to public blockchain transaction data at scale, with cross-chain tracing across bridges, mixers, DEX swaps, and DeFi protocols.
+
+The compliance-vendor business model is **SaaS** — Chainalysis is not a regulated digital-asset entity itself (no [[bitlicense|BitLicense]], no [[limited-purpose-trust-charter|trust charter]], no [[occ-national-trust-bank-charter|OCC charter]]); it sells products to regulated entities that need to satisfy their own regulator obligations. This is structurally distinct from issuers and custodians.
 
 ## Governing concepts
 
@@ -27,7 +41,9 @@ _(populated as public vendor sources are ingested. Target in this Session 1: [[c
 - [[bitlicense]] — NYDFS's central virtual-currency-regulatory primitive; compliance vendors map their tooling to BitLicense reporting requirements (23 NYCRR Part 200 + 23 NYCRR Part 504 transaction monitoring + cybersecurity).
 - [[limited-purpose-trust-charter]] — NYDFS's alternative regulatory path for fiduciary-powers vendors.
 - [[nydfs-greenlist]] — the parallel coin-side approval mechanism; relevant to vendors offering specific stablecoins.
-- [[citation-discipline]] — compliance outputs are the canonical example of citable, defensible analytics for regulator audiences.
+- [[kyt-know-your-transaction]] — the canonical compliance-vendor product category; real-time transaction monitoring.
+- [[on-chain-analytics]] — the technical primitive on which KYT and other compliance-vendor products are built.
+- [[citation-discipline]] — compliance outputs are the canonical example of citable, defensible analytics for regulator audiences. Chainalysis's "court admissible" positioning is structural citation discipline at the compliance-vendor product layer.
 
 ## Notable regulatory frame
 
@@ -63,3 +79,4 @@ _(populated as public vendor sources are ingested. Target in this Session 1: [[c
 - [[51-deck-april-2026]]
 - [[regulator-eu-mica-esma-hub]]
 - [[regulator-nydfs-bitlicense-page-2026-04]]
+- [[vendor-chainalysis-homepage-2026-04]]

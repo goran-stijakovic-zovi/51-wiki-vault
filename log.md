@@ -95,3 +95,15 @@ Format: `## [YYYY-MM-DD] <op> | <one-line summary>`
 - Schema observation: vendor `public_status:` is starting to lean into multi-line / multi-jurisdiction qualifiers (BitGo has 2 entries with subsidiary names + dates; Circle has 3 entries with subsidiary names + dates). The richer-schema candidate (separate `licenses:` field with type+jurisdiction+date+source) is increasingly justified. Still tracked for after-ingest-8 lint.
 - Open questions captured: BitGo MPC architecture details, bankruptcy-remote segregation language, insurance coverage, SOC 1/2 / ISO 27001, state trust charters beyond NY, the Mike Belshe IPO letter content (SEC EDGAR S-1 future-ingest), MiCA EU posture, relationship to specific stablecoin issuers using BitGo for reserve custody
 - Path A check: PASS — BitGo homepage is fully public
+
+## [2026-04-27] ingest | Chainalysis public homepage | vendor-chainalysis-homepage-2026-04
+- Pages touched: 1 source + 1 vendor + 2 concepts + 2 deepened pages = 4 new, 2 updates
+- New vendor: chainalysis — first compliance-sector vendor in the wiki. SaaS model (NOT a regulated digital-asset entity); empty public_status: field. Multi-product surface: KYT, Reactor, Risk Assessment (Address Screening / VASP Risking / Sentinel), Hexagate, Alterya, Data Solutions.
+- New concepts:
+  - kyt-know-your-transaction — substantive: real-time transaction screening; canonical compliance-vendor product category. Anchored on Chainalysis KYT product.
+  - on-chain-analytics — substantive: technical primitive (clustering heuristics + ML + cross-chain tracing) underlying KYT, Reactor, Risk Assessment.
+- Deepened: regulatory-and-compliance (now 4 sources, 1 vendor — added compliance-vendor product categories table mapping product types to regulator-side anchors), citation-discipline (now 5 sources — added compliance-vendor product layer as third citation-discipline layer)
+- Schema observation tracked for the after-ingest-8 lint: empty `public_status:` field for chainalysis is itself a finding (the vendor IS in the regulatory-and-compliance sector but doesn't itself hold regulatory licenses; the empty list communicates this structurally).
+- Substantive findings: Chainalysis is the wiki's canonical institutional-grade compliance vendor. The compliance-vendor product categories table on the regulatory-and-compliance sector page connects regulator-side anchors (NYDFS Part 504, FATF Travel Rule, MiCA Title V, OFAC, FATF VASP) to vendor-side products (KYT, Reactor, Risk Assessment) — the wiki's first product-vs-regulator mapping.
+- Path A discipline note: Chainalysis homepage names IRS as a tax-agency client. Reproduced as one of named-example-clients on both the source page and the vendor page; quantified PR claims ($34B frozen, 9 of top 10 exchanges, 45+ regulators, 1,500+ customers) reproduced verbatim. Specific named-government case studies elsewhere on chainalysis.com flagged as different licensing posture if future ingest proposed.
+- Path A check: PASS — Chainalysis homepage is fully public

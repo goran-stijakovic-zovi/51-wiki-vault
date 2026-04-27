@@ -1,7 +1,7 @@
 ---
 type: concept
 name: Citation discipline
-sources: 4
+sources: 5
 last_updated: 2026-04-27
 ---
 
@@ -21,6 +21,7 @@ This is the property that makes a wiki's outputs *defensible* to institutional b
 - [[51-deck-april-2026]] — Slide 4 lists "non-existent or poor-quality data" and "no licenses for external data use" as canonical status-quo failures of generic intelligence platforms. Slide 11 places "client deliverable licensing" as a capability axis. Together these establish that for an institutional-buyer audience, **citation discipline and licensing-clean output are the same property** — claims must be sourced *and* the sources must be redistributable.
 - [[vendor-circle-transparency-page-2026-04]] — Circle's two-tier disclosure regime (weekly self-published holdings + monthly third-party Deloitte attestation under AICPA standards) is a real-world institutional implementation of structural citation discipline at the issuer layer. The reserve-vehicle grounding (the [[2a-7-government-money-market-fund|SEC-registered 2a-7 Circle Reserve Fund]] managed by [[blackrock]] with daily public portfolio reporting) adds a third structural-citation layer on top of the issuer's own.
 - [[vendor-sky-money-landing-2026-04]] — **counter-example illustrating that citation discipline at the issuer layer is not universal in DeFi-native protocols.** Sky Protocol's public landing page replaces issuer-side disclosure with structural disclaimers ("Sky.money does not control, set, or guarantee the rate"; "Skybase does not participate in, and has no ability to control or guarantee outcomes of, decentralized governance processes"). The DeFi-native analogue of citation discipline may be on-chain provenance — every governance change has a public, deterministic on-chain trail (see [[dao-governance]]) — but this is a different *kind* of citation discipline operating at the protocol-mechanics layer, not at the reserve-disclosure layer.
+- [[vendor-chainalysis-homepage-2026-04]] — citation discipline at the **compliance-vendor product layer**. Chainalysis's "court admissible" data positioning is a structural commitment that compliance analytics output must be defensible in regulator and court contexts. This extends the citation-discipline concept across three layers in the wiki: the **substrate layer** (Karpathy's wiki pattern enforces wiki-link-to-source on every claim), the **issuer layer** (Circle's monthly Big Four attestations under AICPA standards), and now the **compliance-vendor layer** (Chainalysis's court-admissible analytics output methodology).
 
 ## Mechanism / how it works
 
@@ -57,3 +58,4 @@ _(pre-domain — but worth noting that this is the property that maps directly t
 - [[51-deck-april-2026]]
 - [[vendor-circle-transparency-page-2026-04]]
 - [[vendor-sky-money-landing-2026-04]]
+- [[vendor-chainalysis-homepage-2026-04]]

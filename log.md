@@ -107,3 +107,15 @@ Format: `## [YYYY-MM-DD] <op> | <one-line summary>`
 - Substantive findings: Chainalysis is the wiki's canonical institutional-grade compliance vendor. The compliance-vendor product categories table on the regulatory-and-compliance sector page connects regulator-side anchors (NYDFS Part 504, FATF Travel Rule, MiCA Title V, OFAC, FATF VASP) to vendor-side products (KYT, Reactor, Risk Assessment) — the wiki's first product-vs-regulator mapping.
 - Path A discipline note: Chainalysis homepage names IRS as a tax-agency client. Reproduced as one of named-example-clients on both the source page and the vendor page; quantified PR claims ($34B frozen, 9 of top 10 exchanges, 45+ regulators, 1,500+ customers) reproduced verbatim. Specific named-government case studies elsewhere on chainalysis.com flagged as different licensing posture if future ingest proposed.
 - Path A check: PASS — Chainalysis homepage is fully public
+
+## [2026-04-27] lint | Session 1 final after-ingest-8 lint | _lint-2026-04-27 (updated)
+- 8 findings total. 5 informational, 1 deferred (F2 — vendor public_status: richness — schema iteration deferred until 5th-or-6th-vendor pressure), 1 PASS check (F7 Path A leakage), 1 forward-reference-resolution-tracking (F8 — 6 of 11 resolved, 4 deferred to future sessions).
+- Top-10 most-linked pages confirms architectural premise: citation-discipline (39), stablecoin-issuers (34), circle (34), regulator-nydfs source (31), Circle transparency source (28), mica-compliance (28), bitlicense (28).
+- Multi-source concepts: 3 (citation-discipline at 5 sources, proof-of-reserves and e-money-token at 2 each).
+- Zero orphans. Forward-references remaining: bankruptcy-remote-segregation, bma, mpc-key-management.
+- No schema iteration applied in this lint commit. Schema feels stable at end-of-Session-1.
+- Memory file at ~/.claude/projects/-Users-gstijakovic-Dev-Projects-51-wiki/memory/project_51_wiki.md updated with final-state vault summary.
+
+## [2026-04-27] session-end | Session 1 complete | 8 ingests + 2 lints + 1 schema iteration
+- Vault state: 63 wiki pages, 8 commits to main + 1 schema commit + 2 lint files (one updated), repo public at https://github.com/goran-stijakovic-zovi/51-wiki-vault.
+- Session 2 (public deploy at 51.zoviconsulting.com) per kickoff doc Step 7 is out of scope here and triggered separately.

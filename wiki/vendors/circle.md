@@ -3,8 +3,8 @@ type: vendor
 name: Circle
 sector: [[stablecoin-issuers]]
 role: stablecoin-issuer
-public_status: ["NYDFS-Money-Transmitter (Circle Internet Financial, LLC)", "NYDFS-VCBA (Circle Internet Financial, LLC)", "BMA-Digital-Asset-Business (Circle International Bermuda Limited)"]
-sources: 1
+public_status: ["NYDFS-Money-Transmitter (Circle Internet Financial, LLC, since 2015-09)", "NYDFS-VCBA / BitLicense (Circle Internet Financial, LLC, since 2015-09)", "BMA-Digital-Asset-Business (Circle International Bermuda Limited)"]
+sources: 2
 last_updated: 2026-04-27
 ---
 
@@ -27,13 +27,14 @@ For institutional buyers, Circle is the canonical large-issuer counterparty in t
 ## Public moves cited
 
 - [[vendor-circle-transparency-page-2026-04]] — Circle's public transparency page articulating the 1:1 redemption guarantee, 100% cash/cash-equivalent backing, the Circle Reserve Fund (USDXX), the weekly + monthly disclosure cadence, the Deloitte audit relationship since fiscal 2022 (Grant Thornton previously from 2015), and explicit US (NYDFS) + Bermuda (BMA) regulatory licenses.
+- [[regulator-nydfs-bitlicense-page-2026-04]] — NYDFS's regulator-side cross-confirmation: Circle Internet Financial, LLC holds BitLicense + Money Transmitter License, both since 2015-09, listed in the NYDFS Regulated Entities table.
 
 ## Public regulatory status
 
 _Sourced specifically from the cited source pages._
 
-- **NYDFS Money Transmitter license** (Circle Internet Financial, LLC) — sourced from [[vendor-circle-transparency-page-2026-04]] (footer text). Cross-confirmation pending from [[regulator-nydfs-bitlicense-list]] (source 6).
-- **NYDFS Virtual Currency Business Activity (VCBA) license** (Circle Internet Financial, LLC) — sourced from [[vendor-circle-transparency-page-2026-04]] (footer text). Cross-confirmation pending from [[regulator-nydfs-bitlicense-list]] (source 6).
+- **NYDFS Money Transmitter license** (Circle Internet Financial, LLC, since 2015-09) — sourced from [[vendor-circle-transparency-page-2026-04]] (footer text); cross-confirmed from [[regulator-nydfs-bitlicense-page-2026-04]] (NYDFS Regulated Entities list).
+- **NYDFS Virtual Currency Business Activity / BitLicense** (Circle Internet Financial, LLC, since 2015-09) — sourced from [[vendor-circle-transparency-page-2026-04]] (footer text); cross-confirmed from [[regulator-nydfs-bitlicense-page-2026-04]]. The "Virtual Currency Business Activity" license referenced in Circle's footer is the [[bitlicense|BitLicense]] under 23 NYCRR Part 200.
 - **BMA Digital Asset Business license** (Circle International Bermuda Limited) — sourced from [[vendor-circle-transparency-page-2026-04]] (footer text).
 - **SEC-registered 2a-7 government money market fund** (Circle Reserve Fund / USDXX) — sourced from [[vendor-circle-transparency-page-2026-04]]. Note: this is the *fund* vehicle's regulatory status; the relationship to Circle is "Circle manages USDXX via BlackRock as fund manager." Captured in `public_status:` frontmatter as a Circle-relevant structural fact, with the body documenting the nuance.
 - **MiCA registration status: not surfaced on Circle's transparency page.** This is an open question (see below). Vendor `public_status:` is NOT populated with any MiCA value here under the schema's source-driven discipline.
@@ -46,12 +47,14 @@ _Sourced specifically from the cited source pages._
 - [[citation-discipline]] — Circle's weekly + monthly + AICPA-attested disclosure regime is one of the canonical institutional implementations of structural citation discipline at the issuer layer.
 - [[counterparty-graph-research]] — Circle's named partners (BlackRock as fund manager, Deloitte as auditor, NYDFS and BMA as regulators) are graph-traversal targets.
 - [[crypto-asset-white-paper]] — open question: Circle does not surface a MiCA white paper on its transparency page; EU-side disclosure status is unclear.
+- [[bitlicense]] — the regulatory regime under which Circle's NYDFS authorisation operates (23 NYCRR Part 200).
+- [[nydfs-greenlist]] — note: USDC is NOT on the NYDFS Greenlist as of 2026-04-27, despite Circle holding a BitLicense. This is a structurally interesting finding — the Greenlist is coin-side (which coins NYDFS-licensed entities may offer) and BitLicense is vendor-side (which entities are NYDFS-authorized to engage in VC business). Open question on USDC's specific regulatory pathway through other licensees' listing policies.
 
 ## Counterparties cited
 
 - [[blackrock]] — manager of the Circle Reserve Fund (USDXX). Sourced from [[vendor-circle-transparency-page-2026-04]].
 - [[deloitte]] — independent auditor since fiscal 2022. Sourced from [[vendor-circle-transparency-page-2026-04]].
-- [[nydfs]] — Money Transmitter and VCBA license issuer. _(Page emerges from source 6.)_
+- [[nydfs]] — Money Transmitter and BitLicense issuer; named in NYDFS Regulated Entities list since 2015-09. Sourced from [[regulator-nydfs-bitlicense-page-2026-04]].
 - [[bma]] — Bermuda Monetary Authority; Digital Asset Business license issuer (Circle International Bermuda Limited). Currently mentioned only in the body of this page; firm page deferred until a second source touches it.
 
 ## Open questions
@@ -63,3 +66,4 @@ _Sourced specifically from the cited source pages._
 ## Sources cited
 
 - [[vendor-circle-transparency-page-2026-04]]
+- [[regulator-nydfs-bitlicense-page-2026-04]]

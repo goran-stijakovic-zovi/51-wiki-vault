@@ -1,7 +1,7 @@
 ---
 type: sector
 name: Stablecoin issuers
-sources: 4
+sources: 5
 last_updated: 2026-04-27
 ---
 
@@ -49,7 +49,7 @@ Neither model is universally better; they require **different diligence framewor
 ## Notable regulatory frame
 
 - **EU MiCA** ([[regulator-eu-mica-esma-hub]]) — Titles III and IV both apply to stablecoin issuers operating in or serving the EU market. The transitional period under Article 143 runs until 1 July 2026, so authorisation status is currently a moving target. ESMA maintains the interim register; vendor `public_status:` frontmatter populates only when sourced from this register.
-- NYDFS BitLicense (source 6, pending ingest) — applies to issuers operating from or serving New York.
+- **NYDFS** ([[regulator-nydfs-bitlicense-page-2026-04]]) — applies to issuers controlling/administering/issuing a virtual currency under [[bitlicense|BitLicense]] Part 200(5). NYDFS published "Guidance on the Issuance of U.S. Dollar-Backed Stablecoins" on 2022-06-08 (referenced from the source; not separately ingested). The [[nydfs-greenlist]] is a parallel coin-side surface — Greenlisted stablecoins as of 2026-04-27 include GUSD (Gemini Dollar), GYEN (GMO JPY), ZUSD (GMO USD), RLUSD (Ripple USD), USDW (WisdomTree Dollar). **Notably absent**: USDT, USDC, DAI, USDS, FDUSD, USDP. Circle holds a BitLicense (issuer-side) but USDC is not Greenlisted (coin-side) — these are structurally distinct regulatory questions.
 
 ## Cross-sector connections
 
@@ -69,3 +69,4 @@ Neither model is universally better; they require **different diligence framewor
 - [[regulator-eu-mica-esma-hub]]
 - [[vendor-circle-transparency-page-2026-04]]
 - [[vendor-sky-money-landing-2026-04]]
+- [[regulator-nydfs-bitlicense-page-2026-04]]

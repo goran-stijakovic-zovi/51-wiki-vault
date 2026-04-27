@@ -69,3 +69,15 @@ Format: `## [YYYY-MM-DD] <op> | <one-line summary>`
 - Substantive negative findings well-captured: Sky's landing page does NOT surface collateralization details, audit firms, regulatory licenses, rebrand history, or the "Stars" sub-DAO structure. Each gap is an open question on the relevant page.
 - Source-acquisition note: docs.sky.money returned HTTP 403; endgame.makerdao.com ECONNREFUSED; info.skyeco.com is JS-rendered and returned empty shell to fetcher; developers.skyeco.com homepage was navigation-only. Substantive technical content gated behind sub-pages that would need targeted fetching in a future ingest.
 - Path A check: PASS — landing page is fully public; no IP concerns; rebrand history attributed to public domain with body note rather than reproduced as source-side claim
+
+## [2026-04-27] ingest | NYDFS — Virtual Currency Businesses (BitLicense + Limited Purpose Trust Charter) | regulator-nydfs-bitlicense-page-2026-04
+- Pages touched: 1 source + 1 firm + 3 concepts + 6 deepened pages = 5 new, 6 updates
+- New firm: nydfs (kind: regulator, jurisdiction: US-NY) — central US-state digital-asset regulator
+- New concepts (all substantive single-source promotions per the schema's "own section + multi-paragraph + regulatory weight" bar):
+  - bitlicense — substantive: 23 NYCRR Part 200, five activity categories, five exemption categories, NMLS application, capital + surety bond ≥$500K, dual-licensing-with-MTL pattern
+  - limited-purpose-trust-charter — alternative NY path; fiduciary-powers + bundled-MTL advantages over BitLicense; preferred path for custody vendors (BitGo, Coinbase Custody, Gemini)
+  - nydfs-greenlist — 8-coin static list (BTC, ETH, GUSD, GYEN, ZUSD, RLUSD, USDW, GOLD); three paths to listing; DFS retains discretionary authority; coin-side mechanism distinct from vendor-side BitLicense
+- Deepened: circle (now 2 sources — public_status: regulator-side cross-confirmed with 2015-09 license dates), regulatory-and-compliance (3 sources — added two-regime comparison table), custody (3 sources — added Limited Purpose Trust Charter as canonical custodian path), payment-and-settlement (3 sources — BitLicense + MTL canonical dual-licensing pattern), stablecoin-issuers (5 sources — added Greenlist mechanics + USDC absence finding), mica-compliance (cross-reference to BitLicense as US-state analogue with structural-difference framing)
+- Schema observation: vendor `public_status:` field gained date qualifiers ("since 2015-09") for the first time. Tracked for after-ingest-8 lint as a candidate richer-schema move (separate `licenses:` structured field with type+jurisdiction+date+source).
+- Substantive negative finding documented: USDC is NOT on NYDFS Greenlist as of 2026-04-27, despite Circle holding a BitLicense. Captured as open question on circle, nydfs-greenlist, and stablecoin-issuers.
+- Path A check: PASS — NYDFS source is fully public regulator material

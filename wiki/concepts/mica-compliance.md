@@ -70,6 +70,7 @@ Critically, ESMA states the listed white papers "have not been reviewed or appro
 - [[crypto-asset-white-paper]] — the disclosure primitive.
 - [[citation-discipline]] — MiCA's "issuer responsibility, ESMA registry-keeper" stance enforces disclosure discipline at the regulatory layer.
 - [[counterparty-graph-research]] — MiCA registration status is a first-order edge label in the counterparty graph for any EU-touching vendor.
+- [[bitlicense]] — US-state regulatory analogue. Different jurisdictional scope (NY-state vs. EU), structurally different mechanism (NYDFS supervises specific licensees vs. ESMA coordinates a register-based regime, and NYDFS distinguishes vendor-side BitLicense from coin-side [[nydfs-greenlist|Greenlist]] while MiCA bundles both into the issuer-side white paper). International issuers like [[circle]] navigate both regimes.
 
 ## Related vendors / sectors
 

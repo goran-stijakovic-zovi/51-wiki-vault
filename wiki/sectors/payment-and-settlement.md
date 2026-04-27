@@ -1,7 +1,7 @@
 ---
 type: sector
 name: Payment and settlement
-sources: 2
+sources: 3
 last_updated: 2026-04-27
 ---
 
@@ -23,13 +23,13 @@ _(populated as public vendor sources are ingested. No target in this Session 1's
 
 - [[mica-compliance]] — applies to crypto-asset service providers in the EU, including settlement-layer operators.
 - [[crypto-asset-service-provider]] — Title V regime; transfer-of-crypto-assets, exchange, execution, and reception/transmission of orders are all named CASP services.
-- [[bitlicense]] — applies to virtual-currency businesses operating in NY, including exchanges and on/off-ramps. _(Page emerges from source 6.)_
+- [[bitlicense]] — NYDFS regime that applies to virtual-currency businesses operating in NY, including exchanges and on/off-ramps. The BitLicense + MTL dual-licensing is the canonical configuration for fiat-handling payment vendors.
 - [[citation-discipline]] — settlement-vendor licensing and partner relationships are the operational substance of institutional-buyer diligence in this sector.
 
 ## Notable regulatory frame
 
 - **EU MiCA** ([[regulator-eu-mica-esma-hub]]) — Title V CASP authorisation covers exchange, transfer, execution, placement, and order-routing services. Transitional period under Article 143 runs until 1 July 2026.
-- NYDFS BitLicense (source 6, pending ingest) — applies to virtual-currency businesses serving New York including exchanges and on/off-ramps.
+- **NYDFS** ([[regulator-nydfs-bitlicense-page-2026-04]]) — applies via [[bitlicense|BitLicense]] to virtual-currency businesses serving New York. Critically, **BitLicense + NY Money Transmitter License (under Banking Law Article 13-B) is the canonical dual-licensing configuration** for fiat-handling payment / settlement vendors. Per NYDFS: "many BitLicensees engage in the transmission of fiat currency (e.g., U.S. dollars), which requires them to hold a money transmission license under New York Banking Law Article 13-B." Vendors holding both: Coinbase, PayPal, Block (f/k/a Square), Circle.
 - Payment and settlement is the sector with the most jurisdiction overlap: a single vendor often operates under multiple licensing regimes (state-level US virtual-currency licenses, federal money-transmitter status, EU MiCA, equivalent regimes in UK / Singapore / Switzerland / etc.). The wiki's `public_status` vendor frontmatter is most populated here.
 
 ## Cross-sector connections
@@ -47,3 +47,4 @@ _(populated as public vendor sources are ingested. No target in this Session 1's
 
 - [[51-deck-april-2026]]
 - [[regulator-eu-mica-esma-hub]]
+- [[regulator-nydfs-bitlicense-page-2026-04]]

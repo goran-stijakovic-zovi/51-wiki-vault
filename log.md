@@ -26,3 +26,12 @@ Format: `## [YYYY-MM-DD] <op> | <one-line summary>`
 - Deepened: citation-discipline (now 2 sources; added licensing-clean-output framing for institutional buyers)
 - Path A redactions documented on the source page: Trust Score values, pillar weights "(90%)", "1300+ vendors / 95 datapoints / 500+ datapoints" product-scale claims, vendor-per-category counts, named vendor lists from slides 7 and 10, slide 11 competitor matrix specifics, slide 12 client-result stats, slide 13 individual expert-network biographical pages (will only graduate to people pages if a later source substantively cites them)
 - Path A check: PASS — banner documented; no proprietary numbers reproduced; framing-only discipline held
+
+## [2026-04-27] ingest | ESMA — Markets in Crypto-Assets Regulation (MiCA) hub | regulator-eu-mica-esma-hub
+- Pages touched: 1 source + 5 new concepts + 2 new firms + 4 deepened sectors = 8 new pages, 4 updates
+- New concepts: mica-compliance (substantive — the central EU regulatory frame), asset-referenced-token (Title III), e-money-token (Title IV), crypto-asset-service-provider (Title V), crypto-asset-white-paper (disclosure primitive with iXBRL requirement)
+- New firms: esma (regulator — first regulator firm page in the wiki), european-commission (anchor-only)
+- Deepened (now 2 sources each): stablecoin-issuers, custody, regulatory-and-compliance, payment-and-settlement — added MiCA frame sections with cross-links to ART, EMT, CASP, white-paper concepts
+- Schema observation tracked for lint-after-ingest-4: Article 143 transitional period (until 1 July 2026) creates a "MiCA in transition" status distinct from "MiCA-registered" — `public_status:` frontmatter may need a sub-state value like ["MiCA-transitional"] or a `mica_transitional_until: 2026-07-01` field. Will resolve when first MiCA-touching vendor enters the wiki (Circle source 4 likely).
+- Schema observation tracked: ESMA's iXBRL white-paper format is a candidate Tier-3 fetcher target — could in principle auto-populate vendor `public_status:` from the ESMA register CSV. Noted in scripts/_README.md future-fetcher list.
+- Path A check: PASS — ESMA hub is a public regulator page; no IP concerns

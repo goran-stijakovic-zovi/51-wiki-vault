@@ -1,7 +1,7 @@
 ---
 type: sector
 name: Custody
-sources: 1
+sources: 2
 last_updated: 2026-04-27
 ---
 
@@ -21,6 +21,8 @@ _(populated as public vendor sources are ingested. Target in this Session 1: [[b
 
 ## Governing concepts
 
+- [[mica-compliance]] — under MiCA, custody-and-administration of crypto-assets is a Title V CASP service ([[crypto-asset-service-provider]]).
+- [[crypto-asset-service-provider]] — Title V regime that covers custody as one of the named services.
 - [[qualified-custodian]] — regulatory status that defines custody for institutional purposes. _(Page emerges from sources 6 — NYDFS — and 7 — custody vendor.)_
 - [[mpc-key-management]] — multi-party computation as the modern key-management architecture. _(Page emerges from source 7 — depending on whether BitGo or Fireblocks; both are MPC-relevant.)_
 - [[bankruptcy-remote-segregation]] — the structural property that makes client assets recoverable in a custodian failure scenario. _(Page emerges if a source substantively develops it.)_
@@ -28,7 +30,9 @@ _(populated as public vendor sources are ingested. Target in this Session 1: [[b
 
 ## Notable regulatory frame
 
-_(populated as regulator sources are ingested. NYDFS BitLicense (source 6) is the canonical state-level US frame; EU MiCA (source 3) applies to crypto-asset service providers including custodians; SEC qualified-custodian status applies for advisors.)_
+- **EU MiCA** ([[regulator-eu-mica-esma-hub]]) — custody-and-administration is a Title V CASP service. Custodians serving EU clients need CASP authorisation; transitional period under Article 143 runs until 1 July 2026.
+- NYDFS BitLicense (source 6, pending ingest) — applies to custodians operating from or serving New York.
+- SEC qualified-custodian rules — apply for custodians serving US registered investment advisers.
 
 ## Cross-sector connections
 
@@ -44,3 +48,4 @@ _(populated as regulator sources are ingested. NYDFS BitLicense (source 6) is th
 ## Sources cited
 
 - [[51-deck-april-2026]]
+- [[regulator-eu-mica-esma-hub]]

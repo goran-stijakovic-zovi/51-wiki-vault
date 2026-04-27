@@ -1,7 +1,7 @@
 ---
 type: sector
 name: Regulatory and compliance
-sources: 1
+sources: 2
 last_updated: 2026-04-27
 ---
 
@@ -21,13 +21,17 @@ _(populated as public vendor sources are ingested. Target in this Session 1: [[c
 
 ## Governing concepts
 
-- [[mica-compliance]] — the EU regulatory frame; compliance vendors map their tooling to MiCA's authorization and reporting requirements. _(Page emerges from source 3 — EU MiCA public summary.)_
+- [[mica-compliance]] — the EU regulatory frame; compliance vendors map their tooling to MiCA's authorisation, supervision, and reporting requirements across all four regulatory categories ([[asset-referenced-token]], [[e-money-token]], "other crypto-assets," [[crypto-asset-service-provider]]).
+- [[crypto-asset-service-provider]] — Title V supervisory regime; compliance vendors are heavy consumers of CASP-side reporting requirements (transaction monitoring, conduct-of-business, suitability) and often operate as CASPs themselves where their product includes order-handling.
+- [[crypto-asset-white-paper]] — iXBRL machine-readable disclosures are a structured-data input compliance vendors can directly consume.
 - [[bitlicense]] — the NYDFS regulatory frame; compliance vendors map their tooling to BitLicense reporting requirements. _(Page emerges from source 6 — NYDFS BitLicense list.)_
 - [[citation-discipline]] — compliance outputs are the canonical example of citable, defensible analytics for regulator audiences.
 
 ## Notable regulatory frame
 
-This sector both **uses** regulatory frameworks (the vendor's product maps client activity to regulator-defined categories) and **is regulated by** them (compliance vendors handling personal data are themselves subject to GDPR, financial-sector data regulations, etc.). The two-sided relationship makes this the most graph-dense sector in the schema.
+- **EU MiCA** ([[regulator-eu-mica-esma-hub]]) — central EU frame. ESMA + EBA + national competent authorities form the supervisory triad. The interim MiCA register (weekly CSV) is the public source of truth for MiCA-registered status.
+- NYDFS BitLicense (source 6, pending ingest) — central US-state frame for virtual-currency businesses operating from or serving New York.
+- This sector both **uses** regulatory frameworks (the vendor's product maps client activity to regulator-defined categories) and **is regulated by** them (compliance vendors handling personal data are themselves subject to GDPR, financial-sector data regulations, etc.). The two-sided relationship makes this the most graph-dense sector in the schema.
 
 ## Cross-sector connections
 
@@ -43,3 +47,4 @@ This sector both **uses** regulatory frameworks (the vendor's product maps clien
 ## Sources cited
 
 - [[51-deck-april-2026]]
+- [[regulator-eu-mica-esma-hub]]

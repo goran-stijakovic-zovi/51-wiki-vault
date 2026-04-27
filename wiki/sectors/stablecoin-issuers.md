@@ -1,7 +1,7 @@
 ---
 type: sector
 name: Stablecoin issuers
-sources: 1
+sources: 2
 last_updated: 2026-04-27
 ---
 
@@ -21,14 +21,18 @@ _(populated as public vendor sources are ingested. Targets in this Session 1: [[
 
 ## Governing concepts
 
+- [[mica-compliance]] — the EU regulatory frame; issuers fall under either Title III ([[asset-referenced-token]]) or Title IV ([[e-money-token]]) depending on whether the token references a basket / commodity / multiple fiat (ART) or a single official currency (EMT). USD-pegged and EUR-pegged single-fiat stablecoins are EMTs.
+- [[asset-referenced-token]] — Title III; multi-reference stabilisation.
+- [[e-money-token]] — Title IV; single-fiat-reference stabilisation.
+- [[crypto-asset-white-paper]] — issuer-side disclosure primitive under MiCA; iXBRL machine-readable from 23 December 2025.
 - [[proof-of-reserves]] — the central transparency requirement for centrally-issued stablecoins. _(Page emerges from source 4 — Circle's reserve attestation.)_
-- [[mica-compliance]] — the EU regulatory frame for asset-referenced and e-money tokens. _(Page emerges from source 3 — EU MiCA public summary.)_
 - [[counterparty-graph-research]] — the research pattern that maps issuer → reserve custodian → audit firm → regulator chains.
 - [[citation-discipline]] — license-clean attestation reporting is the base case for institutional-grade issuer research.
 
 ## Notable regulatory frame
 
-_(populated as regulator sources are ingested. EU MiCA (source 3) and NYDFS BitLicense (source 6) both apply to issuers operating in their respective jurisdictions.)_
+- **EU MiCA** ([[regulator-eu-mica-esma-hub]]) — Titles III and IV both apply to stablecoin issuers operating in or serving the EU market. The transitional period under Article 143 runs until 1 July 2026, so authorisation status is currently a moving target. ESMA maintains the interim register; vendor `public_status:` frontmatter populates only when sourced from this register.
+- NYDFS BitLicense (source 6, pending ingest) — applies to issuers operating from or serving New York.
 
 ## Cross-sector connections
 
@@ -45,3 +49,4 @@ _(populated as regulator sources are ingested. EU MiCA (source 3) and NYDFS BitL
 ## Sources cited
 
 - [[51-deck-april-2026]]
+- [[regulator-eu-mica-esma-hub]]

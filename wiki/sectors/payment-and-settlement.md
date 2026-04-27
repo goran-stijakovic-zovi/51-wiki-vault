@@ -1,7 +1,7 @@
 ---
 type: sector
 name: Payment and settlement
-sources: 1
+sources: 2
 last_updated: 2026-04-27
 ---
 
@@ -21,13 +21,16 @@ _(populated as public vendor sources are ingested. No target in this Session 1's
 
 ## Governing concepts
 
-- [[mica-compliance]] — applies to crypto-asset service providers in the EU, including settlement-layer operators. _(Page emerges from source 3.)_
+- [[mica-compliance]] — applies to crypto-asset service providers in the EU, including settlement-layer operators.
+- [[crypto-asset-service-provider]] — Title V regime; transfer-of-crypto-assets, exchange, execution, and reception/transmission of orders are all named CASP services.
 - [[bitlicense]] — applies to virtual-currency businesses operating in NY, including exchanges and on/off-ramps. _(Page emerges from source 6.)_
 - [[citation-discipline]] — settlement-vendor licensing and partner relationships are the operational substance of institutional-buyer diligence in this sector.
 
 ## Notable regulatory frame
 
-Payment and settlement is the sector with the most jurisdiction overlap: a single vendor often operates under multiple licensing regimes (state-level US virtual-currency licenses, federal money-transmitter status, EU MiCA, equivalent regimes in UK / Singapore / Switzerland / etc.). The wiki's `public_status` vendor frontmatter is most populated here.
+- **EU MiCA** ([[regulator-eu-mica-esma-hub]]) — Title V CASP authorisation covers exchange, transfer, execution, placement, and order-routing services. Transitional period under Article 143 runs until 1 July 2026.
+- NYDFS BitLicense (source 6, pending ingest) — applies to virtual-currency businesses serving New York including exchanges and on/off-ramps.
+- Payment and settlement is the sector with the most jurisdiction overlap: a single vendor often operates under multiple licensing regimes (state-level US virtual-currency licenses, federal money-transmitter status, EU MiCA, equivalent regimes in UK / Singapore / Switzerland / etc.). The wiki's `public_status` vendor frontmatter is most populated here.
 
 ## Cross-sector connections
 
@@ -43,3 +46,4 @@ Payment and settlement is the sector with the most jurisdiction overlap: a singl
 ## Sources cited
 
 - [[51-deck-april-2026]]
+- [[regulator-eu-mica-esma-hub]]

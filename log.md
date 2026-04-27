@@ -81,3 +81,17 @@ Format: `## [YYYY-MM-DD] <op> | <one-line summary>`
 - Schema observation: vendor `public_status:` field gained date qualifiers ("since 2015-09") for the first time. Tracked for after-ingest-8 lint as a candidate richer-schema move (separate `licenses:` structured field with type+jurisdiction+date+source).
 - Substantive negative finding documented: USDC is NOT on NYDFS Greenlist as of 2026-04-27, despite Circle holding a BitLicense. Captured as open question on circle, nydfs-greenlist, and stablecoin-issuers.
 - Path A check: PASS — NYDFS source is fully public regulator material
+
+## [2026-04-27] ingest | BitGo public homepage | vendor-bitgo-homepage-2026-04
+- Pages touched: 1 source + 1 vendor + 2 concepts + 1 firm + 1 person + 3 deepened pages = 6 new, 3 updates
+- New vendor: bitgo — first custody-sector vendor in the wiki. public_status: NYDFS Limited Purpose Trust Charter (since 2021-03) + OCC National Trust Bank Charter (BitGo Bank & Trust, N.A.). Multi-jurisdictional subsidiary structure (BitGo Holdings → BitGo Bank & Trust N.A. + BitGo NY Trust Co LLC).
+- New concepts:
+  - occ-national-trust-bank-charter — substantive: federal US regulatory primitive distinct from state BitLicense / state trust charter; multi-state operating scope; bank-like regulatory perimeter without FDIC
+  - qualified-custodian — substantive: federal SEC Custody Rule (Rule 206(4)-2); required for vendors serving SEC-registered investment advisers
+- New firms: occ (kind: regulator, jurisdiction: US-Federal)
+- New people: mike-belshe (2 sources — 51 deck slide 13 + BitGo homepage; CEO + Co-Founder of BitGo)
+- Deepened: custody (now 4 sources — added comparative table of three US regulatory paths: state BitLicense, state Trust Charter, federal OCC charter), limited-purpose-trust-charter (cross-reference to OCC charter as federal analogue), bitlicense (cross-reference to OCC charter)
+- Substantive findings: BitGo's recent OCC national trust bank charter conversion is the headline regulatory primitive from this ingest. The "three regulatory paths in US digital-asset custody" comparison is now load-bearing structure on the custody sector page.
+- Schema observation: vendor `public_status:` is starting to lean into multi-line / multi-jurisdiction qualifiers (BitGo has 2 entries with subsidiary names + dates; Circle has 3 entries with subsidiary names + dates). The richer-schema candidate (separate `licenses:` field with type+jurisdiction+date+source) is increasingly justified. Still tracked for after-ingest-8 lint.
+- Open questions captured: BitGo MPC architecture details, bankruptcy-remote segregation language, insurance coverage, SOC 1/2 / ISO 27001, state trust charters beyond NY, the Mike Belshe IPO letter content (SEC EDGAR S-1 future-ingest), MiCA EU posture, relationship to specific stablecoin issuers using BitGo for reserve custody
+- Path A check: PASS — BitGo homepage is fully public

@@ -1,7 +1,7 @@
 ---
 type: sector
 name: Custody
-sources: 3
+sources: 4
 last_updated: 2026-04-27
 ---
 
@@ -17,7 +17,19 @@ This sector is named on the public 51 deck as a distinct research category (Slid
 
 ## Vendors in this sector
 
-_(populated as public vendor sources are ingested. Target in this Session 1: [[bitgo]] OR [[fireblocks]] (source 7 — Goran picks).)_
+- [[bitgo]] — institutional digital-asset custody and infrastructure provider; multi-jurisdictional subsidiary structure with both NYDFS Limited Purpose Trust Charter (BitGo New York Trust Company, LLC, since 2021-03) and OCC National Trust Bank Charter (BitGo Bank & Trust, National Association). First custody-sector vendor in the wiki.
+
+## Three US regulatory paths for digital-asset custody
+
+The two trust-charter sources in this wiki ([[regulator-nydfs-bitlicense-page-2026-04]] and [[vendor-bitgo-homepage-2026-04]]) together establish that US digital-asset custody operates under three distinct regulatory paths:
+
+| Path | Source | Issuing authority | Scope |
+|---|---|---|---|
+| **State BitLicense** ([[bitlicense]]) | 23 NYCRR Part 200 | NYDFS | NY-state-level transactional + custody activity. Custody-only vendors typically don't choose this path. |
+| **State Limited Purpose Trust Charter** ([[limited-purpose-trust-charter]]) | NY Banking Law | NYDFS | NY-state-level fiduciary-powers + bundled MTL. Canonical state path for custody-focused vendors (BitGo NY, Coinbase Custody Trust, Gemini Trust). |
+| **Federal OCC National Trust Bank Charter** ([[occ-national-trust-bank-charter]]) | National Bank Act | [[occ]] | Federal-level multi-state authorisation; bank-like regulatory perimeter without FDIC deposit insurance for digital-asset custody. |
+
+Vendors may hold multiple authorisations across the three paths (BitGo holds both state Limited Purpose Trust Charter and federal OCC charter for its different US subsidiaries). EU-side custody is governed separately under [[mica-compliance|MiCA]] [[crypto-asset-service-provider|CASP]] Title V.
 
 ## Governing concepts
 
@@ -25,7 +37,8 @@ _(populated as public vendor sources are ingested. Target in this Session 1: [[b
 - [[crypto-asset-service-provider]] — Title V regime that covers custody as one of the named services.
 - [[bitlicense]] — NYDFS regime; custody activity is Part 200(2).
 - [[limited-purpose-trust-charter]] — alternative NYDFS regime; preferred path for custody-focused vendors due to fiduciary-powers authorisation and bundled money-transmission authority.
-- [[qualified-custodian]] — regulatory status that defines custody for institutional purposes. _(Page emerges from source 7 — custody vendor.)_
+- [[occ-national-trust-bank-charter]] — federal alternative path; multi-state operating scope; bank-like regulatory perimeter.
+- [[qualified-custodian]] — federal regulatory status under the Investment Advisers Act Custody Rule (Rule 206(4)-2). Required for vendors serving SEC-registered investment-adviser clients.
 - [[mpc-key-management]] — multi-party computation as the modern key-management architecture. _(Page emerges from source 7 — depending on whether BitGo or Fireblocks; both are MPC-relevant.)_
 - [[bankruptcy-remote-segregation]] — the structural property that makes client assets recoverable in a custodian failure scenario. _(Page emerges if a source substantively develops it.)_
 - [[counterparty-graph-research]] — custodians are dense graph nodes (every issuer they custody for, every audit firm they work with, every regulator they report to).
@@ -52,3 +65,4 @@ _(populated as public vendor sources are ingested. Target in this Session 1: [[b
 - [[51-deck-april-2026]]
 - [[regulator-eu-mica-esma-hub]]
 - [[regulator-nydfs-bitlicense-page-2026-04]]
+- [[vendor-bitgo-homepage-2026-04]]

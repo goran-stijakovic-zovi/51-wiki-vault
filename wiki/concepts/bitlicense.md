@@ -62,7 +62,8 @@ This is why [[circle]]'s `public_status:` lists both NYDFS Money Transmitter and
 
 ## Related concepts
 
-- [[limited-purpose-trust-charter]] — alternative regulatory path; structurally distinct.
+- [[limited-purpose-trust-charter]] — alternative state-level regulatory path; structurally distinct (custody-focused vendors typically choose this over BitLicense).
+- [[occ-national-trust-bank-charter]] — federal-level alternative path; multi-state operating scope; bank-like regulatory perimeter. Custody vendors may hold federal OCC charter alongside or instead of state regulatory paths ([[bitgo]] holds both for different subsidiaries).
 - [[nydfs-greenlist]] — separate but related public surface; coins approved for offering by NYDFS-licensed VC entities. Note: BitLicense holders are not automatically Greenlist-included for their own coins (e.g. USDC is NOT on the Greenlist even though Circle holds a BitLicense).
 - [[mica-compliance]] — EU-level analogue. Both regimes are first-order screening for international issuers and CASPs.
 - [[crypto-asset-service-provider]] — MiCA's CASP regime is the EU functional analogue of the BitLicense's transactional / custody / exchange categories.

@@ -44,13 +44,15 @@ The pattern: vendors whose primary product is custody choose the trust charter; 
 ## Related concepts
 
 - [[bitlicense]] — alternative regulatory path. The two are similar in many respects but the trust charter's fiduciary-powers and MTL-bundled features make it structurally preferable for custody-focused vendors.
-- [[qualified-custodian]] — concept page emerges from the upcoming custody-vendor ingest. The trust-charter authorisation is closely tied to qualified-custodian status under federal advisor rules.
-- [[counterparty-graph-research]] — vendors holding the trust charter typically have NYDFS as a named regulatory counterparty, often alongside other state and federal regulators.
+- [[occ-national-trust-bank-charter]] — federal-level US analogue. State trust charter (NY) and federal trust bank charter (OCC) are not redundant — vendors may hold both for different subsidiaries (e.g. [[bitgo]] holds NY trust + OCC trust bank). Federal charter has multi-state operating scope; state charter is NY-specific.
+- [[qualified-custodian]] — federal regulatory status under SEC Custody Rule. State trust charter equivalence to qualified-custodian status is a structural question (NY trust charter is generally recognized but specific equivalence depends on Investment Advisers Act bank-definition application).
+- [[counterparty-graph-research]] — vendors holding the trust charter typically have NYDFS as a named regulatory counterparty, often alongside other state and federal regulators (OCC for federally-chartered subsidiaries).
 - [[mica-compliance]] — the EU functional analogue for custody is the [[crypto-asset-service-provider|CASP]] custody-and-administration service category under Title V; the regulatory mechanism is structurally different (registration under MiCA vs. chartering under NY Banking Law) but the buyer-screening implications are similar.
 
 ## Related vendors / sectors
 
-- [[custody]] — sector where this regulatory path is most common. Most pages in this sector will reference the charter once vendor ingests proceed.
+- [[custody]] — sector where this regulatory path is most common.
+- [[bitgo]] — BitGo New York Trust Company, LLC holds this charter since 2021-03, alongside the OCC federal charter for BitGo Bank & Trust, N.A.
 - [[stablecoin-issuers]] — some issuers operate via subsidiary structures with trust charters (Gemini Dollar via Gemini Trust Company); the wiki's seed sources don't directly cover this path yet.
 
 ## Open questions

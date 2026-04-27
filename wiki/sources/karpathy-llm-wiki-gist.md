@@ -77,4 +77,5 @@ _(none — pre-domain)_
 
 ## Cross-references
 
-_(none yet — this is the first source in the vault)_
+- [[andrej-karpathy]] — gist author.
+- _(no other cross-references — this was the first source in the vault; subsequent sources cross-reference the gist as the meta-pattern source.)_

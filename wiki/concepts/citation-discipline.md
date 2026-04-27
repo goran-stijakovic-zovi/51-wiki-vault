@@ -29,7 +29,7 @@ Citation becomes structural through three reinforcing rules:
 2. **Source pages are first-class citizens.** Every ingested source gets its own page with verbatim Key Claims and Notable Quotes. Other pages link to the source, not to a URL or a free-text reference.
 3. **Query operation reads index → pages → answer.** The query path *cannot* return text without traversing source pages, so citations are the natural output format.
 
-In a domain like institutional research, this property is the difference between "the system claims X" and "the system claims X, [[source-page-name]] cites X via this verbatim quote." The latter is auditable; the former is a hallucination risk.
+In a domain like institutional research, this property is the difference between "the system claims X" and "the system claims X, with the verbatim quote sourced from [[karpathy-llm-wiki-gist]] in the wiki's source layer." The latter is auditable; the former is a hallucination risk.
 
 The 51 deck adds a fourth layer specific to institutional buyers: **licensing-clean output**. A consulting firm assembling a client deliverable cannot redistribute analysis derived from data it has no license to redistribute. The wiki-pattern substrate addresses this by being explicit about the licensing posture of every source page (this vault is Path A — public sources only). A future fork of this template, ingesting contracted proprietary sources for internal use, would tag those source pages differently and gate redistribution at the schema level.
 

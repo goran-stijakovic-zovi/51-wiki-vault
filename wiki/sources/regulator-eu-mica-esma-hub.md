@@ -80,4 +80,6 @@ _(none in this source — the ESMA hub is regulator-side. Vendor-level MiCA-regi
 
 ## Cross-references
 
+- [[esma]] — publisher of the source; the EU-level coordinator of MiCA and keeper of the interim register.
+- [[european-commission]] — proposer of MiCA itself.
 - [[51-deck-april-2026]] — names "Regulatory & Compliance" as a sector and treats regulatory posture as a first-order vendor-screening axis; ESMA's MiCA hub is the EU regulatory frame this audience cares about.

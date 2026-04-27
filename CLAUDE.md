@@ -67,6 +67,14 @@ This vault is designed for **public deployment** at `51.zoviconsulting.com`. The
   - `regulator-<jurisdiction>-<topic>` (e.g. `regulator-eu-mica-summary`, `regulator-nydfs-bitlicense-list`).
 - **Person / firm slugs**: lowercase-hyphenated (`andrej-karpathy`, `marc-baumann`, `european-commission`, `nydfs`).
 
+### Firm kinds (frontmatter `kind:` enumeration)
+
+The `firm.md` template's `kind:` field is one of:
+
+`regulator | audit-firm | asset-manager | bank | custodian-firm | parent-company | consulting-firm | ratings-agency | other`
+
+`other` is permitted but must be paired with a body-level role explanation. New `kind:` values graduate to the canonical enumeration via a schema-iteration commit (after lint surfaces ≥2 vendors using the same ad-hoc value).
+
 ### Page conventions
 
 Every page starts with YAML frontmatter:

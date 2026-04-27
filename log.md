@@ -47,3 +47,15 @@ Format: `## [YYYY-MM-DD] <op> | <one-line summary>`
 - Schema observation: `firm.kind: asset-manager` is a new kind value (BlackRock); not previously in the firm-template enumeration. Working as ad-hoc; flag at lint for the canonical kind enumeration update.
 - Substantive negative finding: Circle's transparency page does NOT mention MiCA. EU-side disclosure layer absent. Captured as open question on circle, e-money-token, and the source pages.
 - Path A check: PASS — Circle's transparency page is fully public; structural / policy claims captured; point-in-time financial snapshots not reproduced
+
+## [2026-04-27] lint | first-pass after-ingest-4 lint | _lint-2026-04-27
+- 7 findings (4 informational, 3 actionable). Path A leakage check: PASS.
+- Forward references to upcoming-ingest pages (bitgo, fireblocks, chainalysis, sky-protocol, nydfs, bitlicense, qualified-custodian, mpc-key-management, regulator-nydfs-bitlicense-list, bankruptcy-remote-segregation, bma) flagged as informational F1 — will resolve through ingests 5–8.
+- Schema iteration applied: see [[2026-04-27 schema commit]] below
+
+## [2026-04-27] schema | iterate after ingest-4 lint | CLAUDE.md + firm.md template + 3 fix commits
+- Expanded `_templates/firm.md` `kind:` enumeration: `regulator | audit-firm | asset-manager | bank | custodian-firm | parent-company | consulting-firm | ratings-agency | other`
+- Added "Firm kinds" subsection to CLAUDE.md documenting the canonical enumeration + `other` escape-hatch rule
+- Fixed F2 `[[source-page-name]]` placeholder in citation-discipline.md → real example `[[karpathy-llm-wiki-gist]]`
+- Fixed F3 orphan pages: added `[[andrej-karpathy]]` cross-reference on karpathy-llm-wiki-gist source page; added `[[esma]]` and `[[european-commission]]` cross-references on regulator-eu-mica-esma-hub source page
+- F5 (vendor public_status: schema richness) deferred to after-ingest-8 lint when more vendors are populated

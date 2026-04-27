@@ -1,7 +1,7 @@
 ---
 type: firm
 name: <Firm Name>
-kind: regulator | audit-firm | parent-company | consulting-firm | other
+kind: regulator | audit-firm | asset-manager | bank | custodian-firm | parent-company | consulting-firm | ratings-agency | other
 jurisdiction: <e.g. EU, US-NY, US-Federal>
 sources: 0
 last_updated: 2026-04-27

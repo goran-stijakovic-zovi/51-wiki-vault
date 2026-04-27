@@ -1,7 +1,7 @@
 ---
 type: concept
 name: Proof of reserves
-sources: 1
+sources: 2
 last_updated: 2026-04-27
 ---
 
@@ -25,6 +25,7 @@ The institutional-buyer screen is *not* whether a single attestation exists; it 
 ## How it shows up in sources
 
 - [[vendor-circle-transparency-page-2026-04]] — Circle's transparency page is a canonical implementation. The page articulates a two-tier cadence (weekly self-published holdings + mint/burn flows, plus monthly Big Four attestation under AICPA standards), names the current independent auditor ([[deloitte]] since fiscal 2022; previously Grant Thornton LLP from 2015), references the [[2a-7-government-money-market-fund|SEC-registered Circle Reserve Fund]] as the reserve vehicle, and points to a continuous reporting history since 2018.
+- [[vendor-sky-money-landing-2026-04]] — **negative finding**. Sky Protocol's public landing page does NOT surface a proof-of-reserves equivalent. No weekly holdings disclosure, no monthly attestation, no audit firm named, no regulator-grounded reserve vehicle described. The architectural contrast with Circle is structural: where centralized issuers use proof-of-reserves regimes as the institutional-buyer trust mechanism, DeFi-native protocols rely on on-chain visibility ("the contracts are public, verify yourself") plus structural disclaimers from the interface operator ([[non-custodial-interface-vs-issuer]]). Whether this constitutes a different *kind* of citation discipline or a different *standard* for transparency is an open question — see below.
 
 ## Mechanism / how it works
 
@@ -54,15 +55,17 @@ This concept covers *fiat-pegged stablecoin* proof of reserves. A separate but r
 
 ## Related vendors / sectors
 
-- [[stablecoin-issuers]] — proof-of-reserves is a sector-defining transparency primitive.
+- [[stablecoin-issuers]] — proof-of-reserves is a sector-defining transparency primitive for centralized issuers; not universal in DeFi-native protocols.
 - [[circle]] — canonical large-issuer implementation.
+- [[sky-protocol]] — counter-example: a DeFi-native issuer whose public landing page does not surface a proof-of-reserves regime.
 
 ## Open questions
 
 - **What's the equivalent transparency primitive for [[asset-referenced-token|ART]] issuers?** Multi-reference tokens (basket-pegged, commodity-pegged) face different reserve-composition questions. Future ingest of an ART-issuer source would substantively develop this.
-- **What's the equivalent for DeFi-native issuers** like Sky Protocol (formerly MakerDAO), where collateral is held on-chain in smart contracts rather than in regulated banking infrastructure? **Will be answered substantively by source 5 (Sky Protocol public docs).**
+- **What's the equivalent for DeFi-native issuers** like [[sky-protocol|Sky Protocol]]? **Partial answer from source 5**: Sky's public landing page does not surface any analogous regime. The DeFi-native model relies on on-chain visibility plus interface-operator disclaimers, which is *not* a proof-of-reserves regime in the centralized-issuer sense. **Whether on-chain visibility constitutes a different *kind* of transparency primitive** (and whether it's adequate for institutional-buyer diligence) is itself an institutional-procurement question. Future ingest of Sky's developer portal, chainlog, or governance forum would establish whether transparency mechanisms exist at a layer the landing page doesn't surface.
 - **The "reserve quality" dimension** — beyond sufficiency (reserves > circulating), there's a second axis of how risky/illiquid the reserve composition is. Different stablecoin issuers make different choices (cash + Treasuries vs. corporate paper vs. long-duration bonds). The wiki's seed-source list does not include direct ingest on this axis; future sources may.
 
 ## Sources cited
 
 - [[vendor-circle-transparency-page-2026-04]]
+- [[vendor-sky-money-landing-2026-04]]

@@ -1,7 +1,7 @@
 ---
 type: sector
 name: Stablecoin issuers
-sources: 3
+sources: 4
 last_updated: 2026-04-27
 ---
 
@@ -18,7 +18,23 @@ This sector is named on the public 51 deck as a distinct research category (Slid
 ## Vendors in this sector
 
 - [[circle]] — centralized US- and EUR-pegged issuer (USDC, EURC). 1:1 redemption guarantee; majority of reserves held in the SEC-registered 2a-7 Circle Reserve Fund (USDXX) managed by BlackRock; weekly self-published holdings + monthly Big Four (Deloitte) attestation under AICPA standards; reporting history since 2018. Sourced from [[vendor-circle-transparency-page-2026-04]].
-- [[sky-protocol]] — DeFi-native issuer (formerly MakerDAO). _(Page emerges from source 5.)_
+- [[sky-protocol]] — DeFi-native USD-pegged issuer (USDS). Smart-contract-governed by SKY tokenholders; public interface operated by separate non-custodial entity ([[skybase-international]]) that explicitly disclaims control. Architecturally distinct from Circle — no surfaced regulatory licenses, no surfaced audit firm, geographic restriction "currently unavailable in the US" without stated legal basis. Sourced from [[vendor-sky-money-landing-2026-04]].
+
+## Centralized-vs-DeFi-native architectural contrast
+
+The two vendors currently in this sector ([[circle]] and [[sky-protocol]]) demonstrate the load-bearing architectural choice institutional buyers face: **centralized issuer with regulator-grounded reserve transparency**, vs. **DeFi-native protocol with on-chain governance and structural disclaimers**.
+
+| Dimension | [[circle]] (USDC, EURC) | [[sky-protocol]] (USDS) |
+|---|---|---|
+| Legal entity model | Single regulated entity | Smart contracts + separate non-custodial interface operator |
+| Reserve disclosure | Weekly self-published + monthly Big Four attestation | Not surfaced on landing page |
+| Reserve grounding | SEC-registered 2a-7 MMF (USDXX) managed by BlackRock | Not surfaced; presumed on-chain over-collateralization (open question) |
+| Regulatory licenses | NYDFS Money Transmitter, NYDFS VCBA, BMA | None surfaced |
+| Audit firm | [[deloitte]] since fiscal 2022 | None named |
+| Governance | Corporate | Decentralized via SKY tokenholders ([[dao-governance]]) |
+| Geographic posture | Available globally per regulatory licensing | "Currently unavailable in the US" without stated legal basis |
+
+Neither model is universally better; they require **different diligence frameworks** ([[non-custodial-interface-vs-issuer]]).
 
 ## Governing concepts
 
@@ -52,3 +68,4 @@ This sector is named on the public 51 deck as a distinct research category (Slid
 - [[51-deck-april-2026]]
 - [[regulator-eu-mica-esma-hub]]
 - [[vendor-circle-transparency-page-2026-04]]
+- [[vendor-sky-money-landing-2026-04]]

@@ -1,7 +1,7 @@
 ---
 type: concept
 name: Citation discipline
-sources: 3
+sources: 4
 last_updated: 2026-04-27
 ---
 
@@ -20,6 +20,7 @@ This is the property that makes a wiki's outputs *defensible* to institutional b
 - [[karpathy-llm-wiki-gist]] — > "When you ask questions against the wiki… The LLM searches for relevant pages, reads them, and synthesizes an answer with citations." The pattern treats citation as a default, not an option.
 - [[51-deck-april-2026]] — Slide 4 lists "non-existent or poor-quality data" and "no licenses for external data use" as canonical status-quo failures of generic intelligence platforms. Slide 11 places "client deliverable licensing" as a capability axis. Together these establish that for an institutional-buyer audience, **citation discipline and licensing-clean output are the same property** — claims must be sourced *and* the sources must be redistributable.
 - [[vendor-circle-transparency-page-2026-04]] — Circle's two-tier disclosure regime (weekly self-published holdings + monthly third-party Deloitte attestation under AICPA standards) is a real-world institutional implementation of structural citation discipline at the issuer layer. The reserve-vehicle grounding (the [[2a-7-government-money-market-fund|SEC-registered 2a-7 Circle Reserve Fund]] managed by [[blackrock]] with daily public portfolio reporting) adds a third structural-citation layer on top of the issuer's own.
+- [[vendor-sky-money-landing-2026-04]] — **counter-example illustrating that citation discipline at the issuer layer is not universal in DeFi-native protocols.** Sky Protocol's public landing page replaces issuer-side disclosure with structural disclaimers ("Sky.money does not control, set, or guarantee the rate"; "Skybase does not participate in, and has no ability to control or guarantee outcomes of, decentralized governance processes"). The DeFi-native analogue of citation discipline may be on-chain provenance — every governance change has a public, deterministic on-chain trail (see [[dao-governance]]) — but this is a different *kind* of citation discipline operating at the protocol-mechanics layer, not at the reserve-disclosure layer.
 
 ## Mechanism / how it works
 
@@ -55,3 +56,4 @@ _(pre-domain — but worth noting that this is the property that maps directly t
 - [[karpathy-llm-wiki-gist]]
 - [[51-deck-april-2026]]
 - [[vendor-circle-transparency-page-2026-04]]
+- [[vendor-sky-money-landing-2026-04]]

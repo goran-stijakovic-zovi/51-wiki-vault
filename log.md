@@ -59,3 +59,13 @@ Format: `## [YYYY-MM-DD] <op> | <one-line summary>`
 - Fixed F2 `[[source-page-name]]` placeholder in citation-discipline.md → real example `[[karpathy-llm-wiki-gist]]`
 - Fixed F3 orphan pages: added `[[andrej-karpathy]]` cross-reference on karpathy-llm-wiki-gist source page; added `[[esma]]` and `[[european-commission]]` cross-references on regulator-eu-mica-esma-hub source page
 - F5 (vendor public_status: schema richness) deferred to after-ingest-8 lint when more vendors are populated
+
+## [2026-04-27] ingest | Sky.money landing page (Sky Protocol public interface) | vendor-sky-money-landing-2026-04
+- Pages touched: 1 source + 1 vendor (sky-protocol) + 2 new concepts + 1 new firm + 3 deepened pages = 5 new pages, 3 updates
+- New vendor: sky-protocol — DeFi-native USD-pegged stablecoin protocol; second vendor in the wiki. public_status: [] (deliberately empty — no licenses surfaced; the contrast with Circle's populated list is the finding). aliases: [makerdao] (rebrand attribution from public domain; not stated on source page).
+- New concepts: non-custodial-interface-vs-issuer (architectural separation pattern), dao-governance (decentralized tokenholder governance)
+- New firms: skybase-international (kind: other — interface-operator role not yet canonical in the firm.kind enumeration; will graduate to canonical via schema iteration if a second DeFi-native protocol enters with the same role pattern)
+- Deepened: stablecoin-issuers (now 4 sources, 2 vendors, with the centralized-vs-DeFi-native architectural contrast section), proof-of-reserves (now 2 sources — Sky as counter-example illustrating that proof-of-reserves regimes are not universal in DeFi-native protocols), citation-discipline (now 4 sources — Sky's structural disclaimers as the counter-pattern)
+- Substantive negative findings well-captured: Sky's landing page does NOT surface collateralization details, audit firms, regulatory licenses, rebrand history, or the "Stars" sub-DAO structure. Each gap is an open question on the relevant page.
+- Source-acquisition note: docs.sky.money returned HTTP 403; endgame.makerdao.com ECONNREFUSED; info.skyeco.com is JS-rendered and returned empty shell to fetcher; developers.skyeco.com homepage was navigation-only. Substantive technical content gated behind sub-pages that would need targeted fetching in a future ingest.
+- Path A check: PASS — landing page is fully public; no IP concerns; rebrand history attributed to public domain with body note rather than reproduced as source-side claim

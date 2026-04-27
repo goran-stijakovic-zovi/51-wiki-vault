@@ -1,7 +1,7 @@
 ---
 type: concept
 name: Citation discipline
-sources: 1
+sources: 2
 last_updated: 2026-04-27
 ---
 
@@ -18,6 +18,7 @@ This is the property that makes a wiki's outputs *defensible* to institutional b
 ## How it shows up in sources
 
 - [[karpathy-llm-wiki-gist]] — > "When you ask questions against the wiki… The LLM searches for relevant pages, reads them, and synthesizes an answer with citations." The pattern treats citation as a default, not an option.
+- [[51-deck-april-2026]] — Slide 4 lists "non-existent or poor-quality data" and "no licenses for external data use" as canonical status-quo failures of generic intelligence platforms. Slide 11 places "client deliverable licensing" as a capability axis. Together these establish that for an institutional-buyer audience, **citation discipline and licensing-clean output are the same property** — claims must be sourced *and* the sources must be redistributable.
 
 ## Mechanism / how it works
 
@@ -28,6 +29,8 @@ Citation becomes structural through three reinforcing rules:
 3. **Query operation reads index → pages → answer.** The query path *cannot* return text without traversing source pages, so citations are the natural output format.
 
 In a domain like institutional research, this property is the difference between "the system claims X" and "the system claims X, [[source-page-name]] cites X via this verbatim quote." The latter is auditable; the former is a hallucination risk.
+
+The 51 deck adds a fourth layer specific to institutional buyers: **licensing-clean output**. A consulting firm assembling a client deliverable cannot redistribute analysis derived from data it has no license to redistribute. The wiki-pattern substrate addresses this by being explicit about the licensing posture of every source page (this vault is Path A — public sources only). A future fork of this template, ingesting contracted proprietary sources for internal use, would tag those source pages differently and gate redistribution at the schema level.
 
 ## Related concepts
 
@@ -49,3 +52,4 @@ _(pre-domain — but worth noting that this is the property that maps directly t
 ## Sources cited
 
 - [[karpathy-llm-wiki-gist]]
+- [[51-deck-april-2026]]

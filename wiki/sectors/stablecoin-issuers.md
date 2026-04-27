@@ -1,7 +1,7 @@
 ---
 type: sector
 name: Stablecoin issuers
-sources: 2
+sources: 3
 last_updated: 2026-04-27
 ---
 
@@ -17,7 +17,8 @@ This sector is named on the public 51 deck as a distinct research category (Slid
 
 ## Vendors in this sector
 
-_(populated as public vendor sources are ingested. Targets in this Session 1: [[circle]] (source 4), [[sky-protocol]] (source 5).)_
+- [[circle]] — centralized US- and EUR-pegged issuer (USDC, EURC). 1:1 redemption guarantee; majority of reserves held in the SEC-registered 2a-7 Circle Reserve Fund (USDXX) managed by BlackRock; weekly self-published holdings + monthly Big Four (Deloitte) attestation under AICPA standards; reporting history since 2018. Sourced from [[vendor-circle-transparency-page-2026-04]].
+- [[sky-protocol]] — DeFi-native issuer (formerly MakerDAO). _(Page emerges from source 5.)_
 
 ## Governing concepts
 
@@ -50,3 +51,4 @@ _(populated as public vendor sources are ingested. Targets in this Session 1: [[
 
 - [[51-deck-april-2026]]
 - [[regulator-eu-mica-esma-hub]]
+- [[vendor-circle-transparency-page-2026-04]]

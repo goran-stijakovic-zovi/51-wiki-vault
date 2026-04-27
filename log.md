@@ -35,3 +35,15 @@ Format: `## [YYYY-MM-DD] <op> | <one-line summary>`
 - Schema observation tracked for lint-after-ingest-4: Article 143 transitional period (until 1 July 2026) creates a "MiCA in transition" status distinct from "MiCA-registered" — `public_status:` frontmatter may need a sub-state value like ["MiCA-transitional"] or a `mica_transitional_until: 2026-07-01` field. Will resolve when first MiCA-touching vendor enters the wiki (Circle source 4 likely).
 - Schema observation tracked: ESMA's iXBRL white-paper format is a candidate Tier-3 fetcher target — could in principle auto-populate vendor `public_status:` from the ESMA register CSV. Noted in scripts/_README.md future-fetcher list.
 - Path A check: PASS — ESMA hub is a public regulator page; no IP concerns
+
+## [2026-04-27] ingest | Circle USDC Transparency & Reserves (public page, fetched April 2026) | vendor-circle-transparency-page-2026-04
+- Pages touched: 1 source + 1 vendor (FIRST vendor page!) + 2 new concepts + 2 new firms + 3 deepened pages = 6 new pages, 3 updates
+- New vendor: circle — first vendor page in the wiki. Sector=stablecoin-issuers; role=stablecoin-issuer; public_status populated with NYDFS Money Transmitter, NYDFS VCBA, BMA Digital Asset Business; named counterparties: BlackRock (fund manager), Deloitte (auditor), NYDFS (regulator pending source 6), BMA (regulator)
+- New concepts: proof-of-reserves (substantive — sector-defining transparency primitive), 2a-7-government-money-market-fund (US-securities-law primitive)
+- New firms: blackrock (asset-manager — kind value), deloitte (audit-firm)
+- Deepened: stablecoin-issuers (now 3 sources, 1 vendor populated), e-money-token (now 2 sources — Circle is EMT-archetype), citation-discipline (now 3 sources — Circle's two-tier disclosure regime as canonical implementation)
+- Path A redactions documented on source page: $277B bridge-volume scale claim, current-month reserve composition snapshots, daily issuance/redemption summaries (point-in-time data)
+- Schema observation: vendor `public_status:` got its first real population. Captured Circle's USDXX → SEC-2a-7 grounding via a parenthetical "(via USDXX)" qualifier in the value. Worth flagging at lint as a candidate for richer schema (e.g. separate `regulatory_relationships:` field) if more vendors surface similar nuance.
+- Schema observation: `firm.kind: asset-manager` is a new kind value (BlackRock); not previously in the firm-template enumeration. Working as ad-hoc; flag at lint for the canonical kind enumeration update.
+- Substantive negative finding: Circle's transparency page does NOT mention MiCA. EU-side disclosure layer absent. Captured as open question on circle, e-money-token, and the source pages.
+- Path A check: PASS — Circle's transparency page is fully public; structural / policy claims captured; point-in-time financial snapshots not reproduced

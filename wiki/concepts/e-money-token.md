@@ -1,7 +1,7 @@
 ---
 type: concept
 name: E-money token (EMT)
-sources: 1
+sources: 2
 last_updated: 2026-04-27
 ---
 
@@ -18,6 +18,7 @@ For institutional buyers in the EU market, the practical implication is that USD
 ## How it shows up in sources
 
 - [[regulator-eu-mica-esma-hub]] — ESMA's hub names EMT as one of three primary asset categories under MiCA, governed by Title IV. The interim MiCA register lists EMT issuers as a separate entity class.
+- [[vendor-circle-transparency-page-2026-04]] — Circle's USDC and EURC are single-fiat-pegged tokens (USD and EUR respectively) — EMT-archetype issuers under MiCA framing. Notably, Circle's transparency page does NOT mention MiCA registration status; the EU-side disclosure layer is absent from the page even though the token shape qualifies as an EMT structurally.
 
 ## Mechanism / how it works
 
@@ -42,14 +43,16 @@ The Title IV regime is generally regarded as the closer of the two stablecoin tr
 
 ## Related vendors / sectors
 
-- [[stablecoin-issuers]] — single-fiat-pegged issuers (USDC, USDT, EUR-pegged stablecoins) are EMT issuers under MiCA.
-- [[circle]] — to be confirmed via the Circle attestation source (ingest 4); USDC is single-USD-pegged.
+- [[stablecoin-issuers]] — single-fiat-pegged issuers (USDC, USDT, EUR-pegged stablecoins) are EMT-archetype issuers under MiCA framing.
+- [[circle]] — single-USD-pegged (USDC) and single-EUR-pegged (EURC) issuer; EMT-archetype structurally, though MiCA registration status is not surfaced on Circle's transparency page (open question on the [[circle]] vendor page).
 
 ## Open questions
 
-- The Title IV regime's overlap with the existing E-Money Directive is partial — does the wiki need a `e-money-directive` concept page to disambiguate, or is "Title IV" sufficient as a regulatory anchor in the EMT page itself? Resolve when a second source (e.g. Circle's MiCA white paper) substantively touches it.
-- Reserve-composition restrictions under Title IV: what's permitted (Treasury bills, central-bank deposits, commercial-bank deposits), and at what concentration limits? Likely substantively developed by Circle's monthly attestation source.
+- The Title IV regime's overlap with the existing E-Money Directive is partial — does the wiki need a `e-money-directive` concept page to disambiguate, or is "Title IV" sufficient as a regulatory anchor in the EMT page itself? Resolve when a future source substantively touches it.
+- Reserve-composition restrictions under Title IV: what's permitted (Treasury bills, central-bank deposits, commercial-bank deposits), and at what concentration limits? **Partial answer from Circle**: Circle's USDC reserve composition (cash + short-dated US Treasuries + overnight Treasury repos, with majority in an SEC-registered 2a-7 government MMF) is structurally close to the asset classes typically permitted under Title IV reserve rules, but Circle's transparency page does not explicitly map its reserve to MiCA Title IV requirements.
+- **Circle's MiCA registration status as of 2026-04 is an open question** — see [[circle]] page. Substantively answered if/when an EU-side regulator source or Circle EU disclosure enters the wiki.
 
 ## Sources cited
 
 - [[regulator-eu-mica-esma-hub]]
+- [[vendor-circle-transparency-page-2026-04]]
